@@ -2,12 +2,13 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .topnavbar {
     flex-direction: column;
   }
   .classname {
-    width: 100%;
+    padding-left: 0%;
+    flex: 100%;
   }
   .menubar {
     width: 100%;
@@ -39,7 +40,7 @@
 }
 .classname {
   flex: 40%;
-  margin: 15px 0px 0px 50px;
+  padding: 15px 0px 0px 50px;
 }
 .menubar {
   flex: 60%;

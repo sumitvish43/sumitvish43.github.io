@@ -26,7 +26,7 @@
   <body>
     <div class="topnavbar">
       <div class="classname">
-        <img src="images/logo.jpg" height="80px" width="400px" />
+        <img src="images/logo.jpg" />
       </div>
       <div class="menubar">
         <ul>
@@ -144,12 +144,6 @@
       </div>
     </div>
     <script>
-      function whats() {
-        const numStyle = getComputedStyle(
-          document.querySelector(".whatsappNo")
-        );
-        numStyle.display = "";
-      }
       function snackBar() {
         var x = document.getElementById("snackbar");
         x.className = "show";

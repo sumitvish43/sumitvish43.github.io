@@ -5,9 +5,11 @@
 @media only screen and (max-width: 600px) {
   .topnavbar {
     flex-direction: column;
+    align-items: flex-start;
   }
   .classname {
-    width: 100%;
+    flex: 100%;
+    margin: 0px 0px 0px 0px;
   }
   .menubar {
     width: 100%;

@@ -7,7 +7,8 @@
     flex-direction: column;
   }
   .classname {
-    width: 100%;
+    flex: 100%;
+    margin: 0px 0px 0px 0px;
   }
   .menubar {
     width: 100%;
@@ -184,12 +185,12 @@ input[type="submit"]:hover {
   background-color: #333; 
   color: #fff;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 15px;
   padding: 16px;
   position: fixed;
   z-index: 1;
   left: 50%;
-  bottom: 30px; 
+  top: 50px; 
 }
 
 #snackbar.show {
@@ -200,44 +201,44 @@ input[type="submit"]:hover {
 
 @-webkit-keyframes fadein {
   from {
-    bottom: 0;
+    top: 0;
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    top: 50px;
     opacity: 1;
   }
 }
 
 @keyframes fadein {
   from {
-    bottom: 0;
+    top: 0;
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    top: 50px;
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeout {
   from {
-    bottom: 30px;
+    top: 50px;
     opacity: 1;
   }
   to {
-    bottom: 0;
+    top: 0;
     opacity: 0;
   }
 }
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
+    top: 50px;
     opacity: 1;
   }
   to {
-    bottom: 0;
+    top: 0;
     opacity: 0;
   }
 }

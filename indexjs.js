@@ -25,6 +25,14 @@ document.addEventListener("click", function (e) {
   }
 });
 
+function openPanel() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closePanel() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+
 span.onclick = function () {
   modal.style.display = "none";
 };
@@ -33,4 +41,26 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+};
+
+function phonenumber(inputtxt) {
+  var phoneno = /^\d{10}$/;
+  if (inputtxt.value.match(phoneno)) {
+    document.getElementById("invalidNumber").style.display = "none";
+    return true;
+  } else {
+    document.getElementsByName("mobno")[0].value = "";
+    document.getElementById("invalidNumber").style.display = "block";
+    return false;
+  }
+};
+function snackBar() {
+  var x = document.getElementById("snackbar");
+  console.log("SnackBar Function called "+x);
+  x.className = "show";
+
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 4000);
+  document.getElementsByName("getMob")[0].reset();
 };

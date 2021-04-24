@@ -20,6 +20,10 @@
       href="https://p7.hiclipart.com/preview/828/707/831/logo-strul-fm-music-jaxsta-bm.jpg"
       type="image/icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="indexcss.css" />
   </head>
   <body>
@@ -171,6 +175,36 @@
         </table>
       </div>
     </div>
+
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closePanel()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form name="getMob" onsubmit="snackBar();return false">
+          <label for="mobno" style="color: #fff; font-size: 17px"
+            >Mobile Number</label
+          >
+          <br /><br /><input
+            type="text"
+            name="mobno"
+            onblur="phonenumber(document.getMob.mobno)"
+            id="mobno"
+            placeholder="Your mobile number.."
+            required
+          />
+          <div
+            id="invalidNumber"
+            style="display: none; font-size: 13px; color: #ccc"
+          >
+            *Should contain 10 digits from 0-9
+          </div>
+          <input type="submit" value="Submit" />
+          <div id="snackbar">You will get a call within 24 hours <i class="fa fa-phone"></i></div>
+        </form>
+      </div>
+    </div>
+
     <div class="HomeHeader">
       <div class="header1">
         <div class="header1_right" style="object-fit: fill">
@@ -185,8 +219,14 @@
             <a href="BMcourses.html">
               <pre><strong>EXPLORE</strong></pre>
             </a>
-            <span>
-              <pre><strong>GET A CALLBACK</strong></pre>
+            <span class="getCallBack" onclick="openPanel()">
+              <pre
+                class="getCallBack1"
+                onclick="openPanel()"
+                style="font-weight: bold"
+              >
+GET A CALLBACK</pre
+              >
             </span>
           </div>
         </div>
