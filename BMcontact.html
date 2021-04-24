@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BRAINMENTORS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Acme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ranchers"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+    />
+    <link rel="icon" href="images/nc3.jpg" type="image/icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="bmcontactcss.css" />
+  </head>
+
+  <body>
+    <div class="topnavbar">
+      <div class="classname">
+        <img src="images/logo.jpg" height="80px" width="400px" />
+      </div>
+      <div class="menubar">
+        <ul>
+          <li class="nav_link"><a href="index.html">HOME</a></li>
+          <li class="nav_link"><a href="BMcourses.html">COURSES</a></li>
+          <li class="nav_link"><span>RESULTS</span></li>
+          <li class="nav_link"><a href="BMcontact.html">CONTACT</a></li>
+          <li class="nav_link"><a href="BMabout.html">ABOUT</a></li>
+          <li class="loginbtn"><a href="BMlogin.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content_container">
+      <div class="address">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.860994524643!2d72.86293321485326!3d19.201272787016162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7d99ce4754b%3A0x42f95e48ca497a44!2sBRAINMENTORS%20ACADEMY!5e0!3m2!1sen!2sin!4v1617169725057!5m2!1sen!2sin"
+          width="100%"
+          height="400px"
+          style="border-radius: 3px; border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <br />
+        <div class="location">
+          <br />
+          <i style="font-size: 15px"
+            >Opp. banarsi hotel<br />
+            Akurli Rd, Hanuman Nagar<br />
+            Kandivali East<br />
+            Mumbai - 400101<br />
+            Maharashtra</i
+          >
+          <h2>Contact us:</h2>
+          <a
+            href="https://www.instagram.com/brainmentors.academy/"
+            target="_blank"
+            class="fa fa-instagram"
+          ></a>
+          <a
+            href="https://www.facebook.com/messages/t/103473711537588"
+            target="_blank"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="mailto:brainmentors.acad@gmail.com"
+            target="_blank"
+            class="fa fa-google"
+          ></a>
+          <a
+            href="https://wa.me/+918928727700"
+            target="blank"
+            class="fa fa-whatsapp"
+          ></a>
+        </div>
+      </div>
+      <div class="content">
+        <form
+          name="contactForm"
+          onsubmit="snackBar();return false"
+          method="POST"
+        >
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+            required
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="mobno">Mobile Number</label>
+          <input
+            type="text"
+            onblur="phonenumber(document.contactForm.mobno)"
+            id="mobno"
+            name="mobno"
+            placeholder="Your mobile number.."
+            required
+          />
+          <div
+            id="invalidNumber"
+            style="display: none; font-size: 13px; color: red"
+          >
+            *Should contain 10 digits from 0-9
+          </div>
+          <br />
+          <label for="subject">Message</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+            required
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+          <div id="snackbar">Message Sent<i class="fa fa-send"></i></div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_inner">
+        <span class="copyinfo">
+          BRAINMENTORS ACADEMY
+          <br />©2021 Brainmentors Inc.
+        </span>
+      </div>
+    </div>
+    <script>
+      function whats() {
+        const numStyle = getComputedStyle(
+          document.querySelector(".whatsappNo")
+        );
+        numStyle.display = "";
+      }
+      function snackBar() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+
+        document.getElementsByName("contactForm")[0].reset();
+      }
+      function phonenumber(inputtxt) {
+        var phoneno = /^\d{10}$/;
+        if (inputtxt.value.match(phoneno)) {
+          document.getElementById("invalidNumber").style.display = "none";
+          return true;
+        } else {
+          document.getElementsByName("mobno")[0].value = "";
+          document.getElementById("invalidNumber").style.display = "block";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

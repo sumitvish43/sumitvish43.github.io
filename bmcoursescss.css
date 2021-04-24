@@ -1,0 +1,255 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .topnavbar {
+    flex-direction: column;
+  }
+  .classname {
+    width: 100%;
+  }
+  .menubar {
+    width: 100%;
+  }
+  .menubar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .menubar li {
+    width: 100%;
+  }
+  .header1 {
+    flex-direction: column;
+  }
+  .header1_right {
+    width: 100%;
+    justify-content: center;
+    align-content: space-around;
+  }
+  #card {
+    width: 100%;
+  }
+}
+.topnavbar {
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  box-shadow: 0px 5px 20px 0px rgb(220 220 220 / 35%);
+}
+.classname {
+  flex: 40%;
+  margin: 15px 0px 0px 50px;
+}
+.menubar {
+  flex: 60%;
+}
+.menubar ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+.menubar li {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.menubar a,
+.menubar span {
+  text-decoration: none;
+  background-color: #0dd3aa;
+  border-radius: 100px;
+  outline: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 22px;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 35%);
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.menubar a:hover,
+.menubar span:hover,
+.loginbtn a:hover {
+  background-color: #099075;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 75%);
+}
+.menubar li:active {
+  transform: scale(1.1, 1.1);
+}
+.menubar:after {
+  content: "";
+  clear: both;
+}
+
+.allclass {
+  margin-top: 50px;
+}
+.sectionName {
+  padding: 10px;
+  font-size: 30px;
+  font-family: Acme;
+  color: #ffffff;
+  background-color: #09ba96;
+  background-image: linear-gradient(to bottom right, #099075, #57ffdd);
+}
+.schoolSection,
+.scienceSection,
+.commSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 25px;
+  margin: 0px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+#card:hover {
+  box-shadow: 0px 2px 25px 0px rgb(0 0 0 / 50%);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+#card {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 25px 0px rgb(0 0 0 / 25%);
+  margin: 30px;
+}
+#card p {
+  padding: 10px;
+  color: #ffffff;
+  background-color: orange;
+  font-size: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  transform: scale(1.5, 1.5);
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.sclcard1 {
+  background-image: url("images/class5.gif");
+}
+.sclcard2 {
+  background-image: url("images/class6.jpg");
+}
+.sclcard3 {
+  background-image: url("images/class7.jpg");
+}
+.sclcard4 {
+  background-image: url("images/class8.jpg");
+}
+.sclcard5 {
+  background-image: url("images/class9.jpg");
+}
+.sclcard6 {
+  background-image: url("images/class10.jpg");
+}
+.scicard1 {
+  background-image: url("images/science11.jpeg");
+}
+.scicard2 {
+  background-image: url("images/science12.jpg");
+}
+.commcard1 {
+  background-image: url("images/commerce11.jpg");
+}
+.commcard2 {
+  background-image: url("images/commerce12.png");
+}
+.subheading2 p {
+  text-align: center;
+}
+.subheading2 p:hover {
+  text-shadow: 1px 2px 10px #09ba96;
+}
+.subheading2 a {
+  text-decoration: none;
+  font-family: Acme;
+  font-size: 30px;
+  color: #099075;
+  font-weight: bold;
+}
+.content pre {
+  font-family: Ranchers;
+  font-weight: 100;
+  color: red;
+}
+.content {
+  margin-top: 25px;
+  margin: 0px 50px;
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+.closer {
+  margin-top: 100px;
+  padding-bottom: 50px;
+  background-color: #0dd3aa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: darkslategray;
+  color: #ffffff;
+}
+.footer_inner {
+  width: 100%;
+  padding: 20px 5%;
+}
+.copyinfo {
+  padding: 40px 0 80px;
+  display: flex;
+}

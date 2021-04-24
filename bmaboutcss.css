@@ -1,0 +1,236 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .topnavbar {
+    flex-direction: column;
+  }
+  .classname {
+    width: 100%;
+  }
+  .menubar {
+    width: 100%;
+  }
+  .menubar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .menubar li {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .message_container {
+    display: block;
+  }
+  .message {
+    flex: 100%;
+    width: 100%;
+  }
+}
+.topnavbar {
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  box-shadow: 0px 5px 20px 0px rgb(220 220 220 / 35%);
+}
+.classname {
+  flex: 40%;
+  margin: 15px 0px 0px 50px;
+}
+.menubar {
+  flex: 60%;
+}
+.menubar ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+.menubar li {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.menubar a,
+.menubar span {
+  text-decoration: none;
+  background-color: rgb(13, 211, 170);
+  border-radius: 100px;
+  outline: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 22px;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 35%);
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.menubar a:hover,
+.menubar span:hover,
+.loginbtn a:hover {
+  background-color: #099075;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 75%);
+}
+.menubar li:active {
+  transform: scale(1.1, 1.1);
+}
+.menubar:after {
+  content: "";
+  clear: both;
+}
+.vision_heading {
+  text-align: center;
+  color: #ffffff;
+  background-color: #09ba96;
+  background-image: linear-gradient(to bottom right, #099075, #57ffdd);
+  padding: 10px;
+  font-size: xx-large;
+  font-family: Acme;
+}
+.message_container {
+  display: flex;
+  padding: 0 2%;
+  padding-bottom: 2%;
+}
+.img_container {
+  flex: 40%;
+}
+.message {
+  color: #898888;
+  flex: 60%;
+  font-size: x-large;
+  font-family: Acme;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.gallery_heading {
+  text-align: center;
+  color: #ffffff;
+  background-color: #09ba96;
+  background-image: linear-gradient(to bottom right, #099075, #57ffdd);
+  padding: 10px;
+  font-size: xx-large;
+  font-family: Acme;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.closer {
+  margin-top: 100px;
+  padding-bottom: 50px;
+  background-color: #0dd3aa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: darkslategray;
+  color: #ffffff;
+}
+.footer_inner {
+  width: 100%;
+  padding: 20px 5%;
+}
+.copyinfo {
+  padding: 40px 0 80px;
+  display: flex;
+}
