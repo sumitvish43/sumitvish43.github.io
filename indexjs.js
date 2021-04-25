@@ -56,7 +56,6 @@ function phonenumber(inputtxt) {
 };
 function snackBar() {
   var x = document.getElementById("snackbar");
-  console.log("SnackBar Function called "+x);
   x.className = "show";
 
   setTimeout(function () {
@@ -64,3 +63,18 @@ function snackBar() {
   }, 4000);
   document.getElementsByName("getMob")[0].reset();
 };
+function navOptions() {
+  var x = document.getElementById("myButtons");
+  if (x.className === "allbuttons") {
+    x.className += " responsive";
+  } else {
+    x.className = "allbuttons";
+  }
+}
+function openMenuPanel() {
+  document.getElementById("menuOverlay").style.display = "block";
+}
+
+function closeMenuPanel() {
+  document.getElementById("menuOverlay").style.display = "none";
+}

@@ -29,10 +29,15 @@
   <body>
     <div class="topnavbar">
       <div class="classname">
-        <img src="images/logo.jpg" height="80px" width="400px" />
+        <img src="images/logo.jpg"/>
       </div>
       <div class="menubar">
-        <ul>
+        <ul class="allbuttons" id="mybuttons">
+          <li class="nav_link" id="bars">
+            <a href="javascript:void(0);" class="icon" onclick="openMenuPanel()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
           <li class="nav_link"><a href="">HOME</a></li>
           <li class="nav_link"><a href="BMcourses.html">COURSES</a></li>
           <li class="nav_link"><span>RESULTS</span></li>
@@ -40,6 +45,19 @@
           <li class="nav_link"><a href="BMabout.html">ABOUT</a></li>
           <li class="loginbtn"><a href="BMlogin.html">LOGIN</a></li>
         </ul>
+      </div>
+      <div id="menuOverlay" class="nav-overlay">
+        <span class="closeMenubtn" onclick="closeMenuPanel()" title="Close"
+          >×</span
+        >
+        <div class="nav-overlay-content">
+          <a href="index.html">HOME</a>
+          <a href="BMcourses.html">COURSES</a>
+          <a href="#">RESULTS</a>
+          <a href="BMcontact.html">CONTACT</a>
+          <a href="BMabout.html">ABOUT</a>
+          <a href="BMlogin.html">LOGIN</a>
+        </div>
       </div>
     </div>
     <div id="myModal" class="modal">
@@ -208,7 +226,7 @@
     <div class="HomeHeader">
       <div class="header1">
         <div class="header1_right" style="object-fit: fill">
-          <img src="images/boy.jpg" height="300" width="400" />
+          <img src="images/boy.jpg"/>
         </div>
         <div class="header1_left">
           <h1 class="heading1">
