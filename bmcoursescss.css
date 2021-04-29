@@ -16,9 +16,6 @@
   .menubar li {
     width: 100%;
   }
-  #card {
-    width: 100%;
-  }
   .menubar li:not(:first-child) {
     display: none;
   }
@@ -39,7 +36,7 @@
     display: block;
     text-align: left;
   }
-  #bars a{
+  #bars a {
     background-color: #0dd3aa;
     color: #fff;
     border-radius: 10px;
@@ -102,21 +99,15 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 5%;
   background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.8);
-  animation-name: fade;
-  animation-timing-function: ease;
-  animation-duration: 0.2s;
+  animation: fade 100ms linear;
 }
 
 @keyframes fade {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+  0%   {width: 0%;}
+  25%  {width: 50%;}
+  75%  {width: 75%;}
+  100% {width: 100%;}
 }
 .nav-overlay-content {
   position: relative;
@@ -139,8 +130,6 @@
   color: #ffffff;
   padding: 20px 32px;
   padding-left: 15%;
-  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 35%);
-  transition: 0.2s linear;
   cursor: pointer;
 }
 
@@ -158,11 +147,11 @@
 }
 
 .allclass {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .sectionName {
-  padding: 10px;
-  font-size: 30px;
+  padding: 15px 10px;
+  font-size: 25px;
   font-family: Acme;
   color: #ffffff;
   background-color: #09ba96;
@@ -172,11 +161,9 @@
 .scienceSection,
 .commSection {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
-  margin-top: 25px;
-  margin: 0px 50px;
-  align-items: center;
+  flex-flow: row wrap;
+  margin: 20px 50px;
   text-align: center;
 }
 
@@ -186,11 +173,11 @@
   cursor: pointer;
 }
 #card {
-  width: 280px;
-  height: 280px;
+  width: 225px;
+  height: 225px;
   border-radius: 10px;
   box-shadow: 0px 2px 25px 0px rgb(0 0 0 / 25%);
-  margin: 30px;
+  margin: 20px;
 }
 #card p {
   padding: 10px;
@@ -203,7 +190,7 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 150px;
+  padding-top: 12%;
   left: 0;
   top: 0;
   width: 100%;
@@ -214,11 +201,12 @@
 }
 
 .modal-content {
+  vertical-align: middle;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 95%;
 }
 
 .close {
@@ -251,15 +239,6 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.sclcard1 {
-  background-image: url("images/class5.gif");
-}
-.sclcard2 {
-  background-image: url("images/class6.jpg");
-}
-.sclcard3 {
-  background-image: url("images/class7.jpg");
-}
 .sclcard4 {
   background-image: url("images/class8.jpg");
 }

@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>BRAINMENTORS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Acme"
@@ -20,10 +20,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="icon" href="blue.jpg" type="image/icon" />
-    <link rel="stylesheet" type="text/css" href="bmloginCSS.css" />
+    <link rel="stylesheet" type="text/css" href="bmlogincss.css" />
   </head>
 
   <body>
+    <div id="menuOverlay" class="nav-overlay">
+      <span class="closeMenubtn" onclick="closeMenuPanel()" title="Close"
+        >×</span
+      >
+      <div class="nav-overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="BMcourses.html">COURSES</a>
+        <a href="#">RESULTS</a>
+        <a href="BMcontact.html">CONTACT</a>
+        <a href="BMabout.html">ABOUT</a>
+        <a href="BMlogin.html">LOGIN</a>
+      </div>
+    </div>
     <div class="topnavbar">
       <div class="classname">
         <img src="images/logo.jpg" />
@@ -31,7 +44,11 @@
       <div class="menubar" id="myMenu">
         <ul class="allbuttons" id="myButtons">
           <li class="nav_link" id="bars">
-            <a href="javascript:void(0);" class="icon" onclick="openMenuPanel()">
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="openMenuPanel()"
+            >
               <i class="fa fa-bars"></i>
             </a>
           </li>
@@ -42,19 +59,6 @@
           <li class="nav_link"><a href="BMabout.html">ABOUT</a></li>
           <li class="loginbtn"><a href="BMlogin.html">LOGIN</a></li>
         </ul>
-      </div>
-      <div id="menuOverlay" class="nav-overlay">
-        <span class="closeMenubtn" onclick="closeMenuPanel()" title="Close"
-          >×</span
-        >
-        <div class="nav-overlay-content">
-          <a href="index.html">HOME</a>
-          <a href="BMcourses.html">COURSES</a>
-          <a href="#">RESULTS</a>
-          <a href="BMcontact.html">CONTACT</a>
-          <a href="BMabout.html">ABOUT</a>
-          <a href="BMlogin.html">LOGIN</a>
-        </div>
       </div>
     </div>
     <div class="header1">
@@ -94,18 +98,17 @@
               />
 
               <button type="submit" class="loginclick"><b>LOG IN</b></button>
-              <div id="snackbar">
-                <i class="fa fa-dashboard"></i> DASHBOARD IS UNDER
-                CONSTRUCTION<br /><br />
-                <i class="fa fa-exclamation-triangle"></i> SORRY FOR THE
-                INCONVENIENCE
-              </div>
               <label>
                 <input type="checkbox" checked="checked" name="remember" />
                 Remember me
               </label>
               <br />
               <button type="reset" class="cancelbtn">Reset</button>
+            </div>
+            <div id="snackbar">
+              <i class="fa fa-dashboard"></i> DASHBOARD IS UNDER CONSTRUCTION<br /><br />
+              <i class="fa fa-exclamation-triangle"></i> SORRY FOR THE
+              INCONVENIENCE
             </div>
           </form>
         </div>

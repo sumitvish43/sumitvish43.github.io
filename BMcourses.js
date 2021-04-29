@@ -2,22 +2,7 @@ var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
 document.addEventListener("click", function (e) {
-  if (e.path[0] == document.getElementsByClassName("sclcard1")[0]) {
-    modal.style.display = "block";
-    document.getElementById("content").innerHTML = document.getElementById(
-      "cls5"
-    ).innerHTML;
-  } else if (e.path[0] == document.getElementsByClassName("sclcard2")[0]) {
-    modal.style.display = "block";
-    document.getElementById("content").innerHTML = document.getElementById(
-      "cls6"
-    ).innerHTML;
-  } else if (e.path[0] == document.getElementsByClassName("sclcard3")[0]) {
-    modal.style.display = "block";
-    document.getElementById("content").innerHTML = document.getElementById(
-      "cls7"
-    ).innerHTML;
-  } else if (e.path[0] == document.getElementsByClassName("sclcard4")[0]) {
+  if (e.path[0] == document.getElementsByClassName("sclcard4")[0]) {
     modal.style.display = "block";
     document.getElementById("content").innerHTML = document.getElementById(
       "cls8"
