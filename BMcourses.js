@@ -27,6 +27,16 @@ document.addEventListener("click", function (e) {
     document.getElementById("content").innerHTML = document.getElementById(
       "scicls12"
     ).innerHTML;
+  } else if (e.path[0] == document.getElementsByClassName("scicard3")[0]) {
+    modal.style.display = "block";
+    document.getElementById("content").innerHTML = document.getElementById(
+      "sciclsEntrance"
+    ).innerHTML;
+  } else if (e.path[0] == document.getElementsByClassName("scicard4")[0]) {
+    modal.style.display = "block";
+    document.getElementById("content").innerHTML = document.getElementById(
+      "sciclsPackage"
+    ).innerHTML;
   } else if (e.path[0] == document.getElementsByClassName("commcard1")[0]) {
     modal.style.display = "block";
     document.getElementById("content").innerHTML = document.getElementById(

@@ -106,10 +106,18 @@
 }
 
 @keyframes mynav {
-  0%   {width: 0%;}
-  25%  {width: 50%;}
-  75%  {width: 75%;}
-  100% {width: 100%;}
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .nav-overlay-content {
   position: relative;
@@ -162,15 +170,16 @@
   flex-flow: row wrap;
   padding: 0 5%;
 }
-.img_container{
+.img_container {
   float: left;
   padding: 0 12%;
 }
-.img_container img{
+.img_container img {
   height: 200;
   size: 0.5vw;
 }
-.message_container p, .message_container span{
+.message_container p,
+.message_container span {
   color: #898888;
   font-size: 1.5rem;
   font-family: Acme;

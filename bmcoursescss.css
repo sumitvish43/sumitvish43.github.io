@@ -104,10 +104,18 @@
 }
 
 @keyframes fade {
-  0%   {width: 0%;}
-  25%  {width: 50%;}
-  75%  {width: 75%;}
-  100% {width: 100%;}
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .nav-overlay-content {
   position: relative;
@@ -190,7 +198,6 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 12%;
   left: 0;
   top: 0;
   width: 100%;
@@ -201,9 +208,8 @@
 }
 
 .modal-content {
-  vertical-align: middle;
   background-color: #fefefe;
-  margin: auto;
+  margin: 4% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 95%;
@@ -253,6 +259,12 @@ tr:nth-child(even) {
 }
 .scicard2 {
   background-image: url("images/science12.jpg");
+}
+.scicard3 {
+  background-image: url("images/entrance.jpg");
+}
+.scicard4 {
+  background-image: url("images/pcmb.jpg");
 }
 .commcard1 {
   background-image: url("images/commerce11.jpg");

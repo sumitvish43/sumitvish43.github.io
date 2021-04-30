@@ -24,17 +24,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="indexcss.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <div class="topnavbar">
       <div class="classname">
-        <img src="images/logo.jpg"/>
+        <img src="images/logo.jpg" />
       </div>
       <div class="menubar">
         <ul class="allbuttons" id="mybuttons">
           <li class="nav_link" id="bars">
-            <a href="javascript:void(0);" class="icon" onclick="openMenuPanel()">
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="openMenuPanel()"
+            >
               <i class="fa fa-bars"></i>
             </a>
           </li>
@@ -97,7 +101,15 @@
               </ul>
             </td>
           </tr>
+          <tr>
+            <td>Fees</td>
+            <td>14,000 INR</td>
+          </tr>
         </table>
+        <p style="color: red">
+          *Please Login to see the syllabus completion, tests performances,
+          attendance record, etc.
+        </p>
       </div>
       <div id="cls10">
         <h2>CLASS 10</h2>
@@ -118,45 +130,75 @@
             <td>Preliminary Exams (BOARDS PATTERN)</td>
             <td>3 times</td>
           </tr>
+          <tr>
+            <td>Fees</td>
+            <td>17,000 INR</td>
+          </tr>
         </table>
-        <br />
+        <p style="color: red">
+          *Please Login to see the syllabus completion, tests performances,
+          attendance record, etc.
+        </p>
       </div>
       <div id="scicls11">
         <h2>CLASS 11 - SCIENCE</h2>
         <table border="2">
           <tr>
-            <td>No. of tests</td>
-            <td>24</td>
+            <td>Admission</td>
+            <td>Starts from April</td>
           </tr>
           <tr>
             <td>Syllabus completion</td>
             <td>By December month</td>
           </tr>
           <tr>
-            <td>Syllabus revisions</td>
-            <td>2 times</td>
+            <td>No. of tests (Theory)</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Fees</td>
+            <td>20,000 INR</td>
           </tr>
         </table>
+        <p style="color: red">
+          *Please Login to see the syllabus completion, tests performances,
+          attendance record, etc.
+        </p>
       </div>
       <div id="scicls12">
         <h2>CLASS 12 - SCIENCE</h2>
         <table border="2">
           <tr>
-            <td>No. of tests</td>
+            <td>Admission</td>
+            <td>Starts from December</td>
+          </tr>
+          <tr>
+            <td>No. of tests (Theory)</td>
             <td>24</td>
           </tr>
           <tr>
             <td>Syllabus completion</td>
-            <td>By December month</td>
+            <td>Within 13 months</td>
           </tr>
           <tr>
             <td>Syllabus revisions</td>
             <td>2 times</td>
           </tr>
+          <tr>
+            <td>Preliminary Exams (BOARDS PATTERN)</td>
+            <td>2 times</td>
+          </tr>
+          <tr>
+            <td>Fees</td>
+            <td>30,000 INR</td>
+          </tr>
         </table>
+        <p style="color: red">
+          *Please Login to see the syllabus completion, tests performances,
+          attendance record, etc.
+        </p>
       </div>
     </div>
-
     <div id="myOverlay" class="overlay">
       <span class="closebtn" onclick="closePanel()" title="Close Overlay"
         >×</span
@@ -181,7 +223,9 @@
             *Should contain 10 digits from 0-9
           </div>
           <input type="submit" value="Submit" />
-          <div id="snackbar">You will get a call within 24 hours <i class="fa fa-phone"></i></div>
+          <div id="snackbar">
+            You will get a call within 24 hours <i class="fa fa-phone"></i>
+          </div>
         </form>
       </div>
     </div>
@@ -189,7 +233,7 @@
     <div class="HomeHeader">
       <div class="header1">
         <div class="header1_right" style="object-fit: fill">
-          <img src="images/boy.jpg"/>
+          <img src="images/boy.jpg" />
         </div>
         <div class="header1_left">
           <h1 class="heading1">
@@ -233,37 +277,70 @@ GET A CALLBACK</pre
     </div>
     <hr />
     <br />
+    <span
+      style="
+        margin: 6% 25px;
+        font-family: Acme;
+        font-size: 25px;
+        color: #099075;
+        padding: 5px 20px;
+        border: 3px solid #099075;
+        border-radius: 100px;
+      "
+    >
+      Student Reviews
+    </span>
     <div class="content">
-      <div>
-        <p class="testcard1" style="background-image: url(blue.jpg)">
-          Ganesh Jani
-        </p>
-      </div>
-      <div>
-        <p class="testcard2" style="background-image: url(Green.jpg)">
-          Menaka Bind
-        </p>
-      </div>
-      <div>
-        <p class="testcard3" style="background-image: url(red.jpg)">
-          Harsh Maurya
-        </p>
-      </div>
-      <div>
-        <p class="testcard4" style="background-image: url(Yellow.jpg)">
-          Aryan Jain
-        </p>
-      </div>
-      <div>
-        <p class="testcard5" style="background-image: url(blue.jpg)">
-          Jayesh Rathore
-        </p>
-      </div>
-      <div>
-        <p class="testcard6" style="background-image: url(Green.jpg)">
-          Chhavi Gautam
-        </p>
-      </div>
+      <p class="testcard">
+        "Best institute! Not only academics but also morals of life I have
+        learned here. <br />Each teacher is master of his/her subject making the
+        lectures understandable and learning becomes fun. Time spent for
+        learning in this institute have been worthwhile!" <br /><br />
+        <img
+          src="images/student1.jpg"
+          height="75"
+          width="75"
+          style="vertical-align: middle; border-radius: 50%"
+        />
+        <span>Ganesh Jani </span>
+      </p>
+      <p class="testcard">
+        "Teachers here make you understand the concepts and visualize them in
+        practical life. I've been studying here for last few years and honestly,
+        these 2 years were the turning point of my school life. <br />I would
+        highly recommend this institute." <br /><br />
+        <img
+          src="images/student2.jpg"
+          height="75"
+          width="75"
+          style="vertical-align: middle; border-radius: 50%"
+        />
+        <span>Menaka Bind </span>
+      </p>
+      <p class="testcard">
+        "Facilities to Faculties, everything is quite awesome. No other coaching
+        can match the extraordinary teaching-learning method which one can find
+        here. Overall, nice experience!" <br /><br />
+        <img
+          src="images/student3.jpg"
+          height="75"
+          width="75"
+          style="vertical-align: middle; border-radius: 50%"
+        />
+        <span>Chhavi Gautam</span>
+      </p>
+      <p class="testcard">
+        "Brainmentors Academy is a perfect blend of honesty, quality, and hard
+        work, which I've been looking for in my NEET preparation. <br />A great
+        learning experience at a very nominal cost." <br /><br />
+        <img
+          src="images/student4.jpg"
+          height="75"
+          width="75"
+          style="vertical-align: middle; border-radius: 50%"
+        />
+        <span>Shubham Yadav</span>
+      </p>
     </div>
     <br /><br />
     <div class="closer">
@@ -285,6 +362,6 @@ GET A CALLBACK</pre
         </span>
       </div>
     </div>
-    <script src="indexjs.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
