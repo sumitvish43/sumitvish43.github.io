@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BRAINMENTORS</title>
+    <title>BRAINMENTORS ACADEMY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -19,7 +19,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" href="images/nc3.jpg" type="image/icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico" type="image/icon" />
     <link rel="stylesheet" type="text/css" href="bmaboutcss.css" />
   </head>
 
@@ -41,7 +43,7 @@
           </li>
           <li class="nav_link"><a href="index.html">HOME</a></li>
           <li class="nav_link"><a href="BMcourses.html">COURSES</a></li>
-          <li class="nav_link"><span>RESULTS</span></li>
+          <li class="nav_link"><a href="bmresults.html">RESULTS</a></li>
           <li class="nav_link"><a href="BMcontact.html">CONTACT</a></li>
           <li class="nav_link"><a href="BMabout.html">ABOUT</a></li>
           <li class="loginbtn"><a href="BMlogin.html">LOGIN</a></li>
@@ -54,7 +56,7 @@
         <div class="nav-overlay-content">
           <a href="index.html">HOME</a>
           <a href="BMcourses.html">COURSES</a>
-          <a href="#">RESULTS</a>
+          <a href="bmresults.html">RESULTS</a>
           <a href="BMcontact.html">CONTACT</a>
           <a href="BMabout.html">ABOUT</a>
           <a href="BMlogin.html">LOGIN</a>
@@ -75,7 +77,7 @@
                 width: auto\9;
                 padding-right: 4%;
                 padding-bottom: 2%;
-                vertical-align: top
+                vertical-align: top;
               "
             />
             Our Founder, Amitkumar Upadhyay and Ashish Bhardwaaj founded
@@ -135,6 +137,63 @@
         <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </div>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <div class="showBtn">
+        <button ng-click="myFunc()" name="showBtn">Show Faculty List</button>
+      </div>
+
+      <div ng-show="showMe">
+        <h2 class="faculty_heading">Our Faculty</h2>
+        <div class="table_container">
+          <table>
+            <tr>
+              <td>TEACHER'S NAME</td>
+              <td>SUBJECT</td>
+            </tr>
+            <tr>
+              <td>Amit Upadhyay</td>
+              <td>Social Science</td>
+            </tr>
+            <tr>
+              <td>Abhishek Upadhyay</td>
+              <td>Advanced Mathematics</td>
+            </tr>
+            <tr>
+              <td>Ashish Bhardawaj</td>
+              <td>Biology</td>
+            </tr>
+            <tr>
+              <td>Ajay Yadav</td>
+              <td>Biology</td>
+            </tr>
+            <tr>
+              <td>Gaurav Upadhyay</td>
+              <td>Physics<br />Mathematics</td>
+            </tr>
+            <tr>
+              <td>Sumit Kumar</td>
+              <td>Physics<br />Inorganic Chemistry<br />Mathematics</td>
+            </tr>
+            <tr>
+              <td>Abhishek Mishra</td>
+              <td>Organic Chemistry</td>
+            </tr>
+            <tr>
+              <td>Saurabh Prajapati</td>
+              <td>Physics<br />Mathematics</td>
+            </tr>
+            <tr>
+              <td>Andrea Mali</td>
+              <td>English</td>
+            </tr>
+            <tr>
+              <td>Parthavi</td>
+              <td>Marathi</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       <div class="footer_inner">
         <span class="copyinfo">
@@ -192,6 +251,26 @@
       function closeMenuPanel() {
         document.getElementById("menuOverlay").style.display = "none";
       }
+
+      var app = angular.module("myApp", []);
+      app.controller("myCtrl", function ($scope) {
+        $scope.showMe = false;
+        $scope.myFunc = function () {
+          stat = $scope.showMe;
+          if (stat == false) {
+            status = "Hide";
+            var color = "red";
+          }
+          if (stat == true) {
+            status = "Show";
+            var color = "#0dd3aa";
+          }
+          $scope.showMe = !$scope.showMe;
+          var btn = document.getElementsByName("showBtn")[0];
+          btn.innerHTML = status + " Faculty List";
+          btn.style.backgroundColor = color;
+        };
+      });
     </script>
   </body>
 </html>

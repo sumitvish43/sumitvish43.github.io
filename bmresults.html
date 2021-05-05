@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BRAINMENTORS ACADEMY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Acme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ranchers"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="bmresultscss.css" />
+  </head>
+  <body>
+    <div class="topnavbar">
+      <div class="classname">
+        <img src="images/logo.jpg" />
+      </div>
+      <div class="menubar">
+        <ul class="allbuttons" id="mybuttons">
+          <li class="nav_link" id="bars">
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="openMenuPanel()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="nav_link"><a href="index.html">HOME</a></li>
+          <li class="nav_link"><a href="BMcourses.html">COURSES</a></li>
+          <li class="nav_link"><a href="">RESULTS</a></li>
+          <li class="nav_link"><a href="BMcontact.html">CONTACT</a></li>
+          <li class="nav_link"><a href="BMabout.html">ABOUT</a></li>
+          <li class="loginbtn"><a href="BMlogin.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <div id="menuOverlay" class="nav-overlay">
+        <span class="closeMenubtn" onclick="closeMenuPanel()" title="Close"
+          >×</span
+        >
+        <div class="nav-overlay-content">
+          <a href="index.html">HOME</a>
+          <a href="BMcourses.html">COURSES</a>
+          <a href="bmresults.html">RESULTS</a>
+          <a href="BMcontact.html">CONTACT</a>
+          <a href="BMabout.html">ABOUT</a>
+          <a href="BMlogin.html">LOGIN</a>
+        </div>
+      </div>
+    </div>
+    <div class="results">
+      <table>
+        <tr>
+          <td>NAME</td>
+          <td>RESULT</td>
+          <td>SCHOOL / COLLEGE</td>
+        </tr>
+        <tr>
+          <td>Menaka Bind</td>
+          <td>SSC - 94.60 %</td>
+          <td>St. Raghuvir English High School</td>
+        </tr>
+        <tr>
+          <td>Ganesh Jani</td>
+          <td>SSC - 93 %</td>
+          <td>St. Raghuvir English High School</td>
+        </tr>
+        <tr>
+          <td>Anurag Singh</td>
+          <td>SSC - 91.40 %</td>
+          <td>Children's Academy</td>
+        </tr>
+        <tr>
+          <td>Rishi Verma</td>
+          <td>SSC - 89 %</td>
+          <td>Children's Academy</td>
+        </tr>
+        <tr>
+          <td>Atul Vishwakarma</td>
+          <td>HSC - 92.23 % PCB</td>
+          <td>Bhartiya Vidya Bhavans College</td>
+        </tr>
+        <tr>
+          <td>Shubham Yadav</td>
+          <td>HSC - 90.9 % PCB<br />NEET - 659/720</td>
+          <td>Bhartiya Vidya Bhavans College</td>
+        </tr>
+        <tr>
+          <td>Mohan Kumar</td>
+          <td>HSC - 92.1 % <br />NEET - 619/720</td>
+          <td>Shri TP Bhatia Jr. College</td>
+        </tr>
+        <tr>
+          <td>Pushkar Tambe</td>
+          <td>JEE - 205/300 <br />(99.32 %ile)</td>
+          <td>Bhartiya Vidya Bhavans College</td>
+        </tr>
+        <tr>
+          <td>Nisha Bhardwaaj</td>
+          <td>JEE - 193/300 <br />(98.52 %ile)</td>
+          <td>Dr. Vyas Junior College</td>
+        </tr>
+        <tr>
+          <td>Sajid Khan</td>
+          <td>HSC - 94.2 % <br />(Commerce)</td>
+          <td>KES College</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function openMenuPanel() {
+        document.getElementById("menuOverlay").style.display = "block";
+      }
+
+      function closeMenuPanel() {
+        document.getElementById("menuOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -190,7 +190,8 @@
   margin: auto;
 }
 
-.gallery_heading {
+.gallery_heading,
+.faculty_heading {
   text-align: center;
   color: #ffffff;
   background-color: #09ba96;
@@ -294,6 +295,52 @@
   to {
     opacity: 1;
   }
+}
+.showBtn {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.showBtn button {
+  text-decoration: none;
+  background-color: rgb(13, 211, 170);
+  border-radius: 100px;
+  outline: none;
+  font-size: 17px;
+  font-family: Acme;
+  color: #ffffff;
+  padding: 10px 22px;
+  margin: 38px;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 15%);
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.table_container {
+  padding: 1% 4%;
+  padding: 30px;
+  background-color: rgb(0 199 157 / 35%);
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  outline: #000;
+}
+td {
+  text-align: left;
+  padding: 18px;
+}
+tr {
+  background-color: #fff;
+}
+tr:first-child {
+  font-weight: bold;
+  font-family: Acme;
+  background-color: #000;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 .closer {
   margin-top: 100px;

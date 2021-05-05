@@ -1,0 +1,239 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .topnavbar {
+    align-items: flex-start;
+  }
+  .menubar {
+    width: 100%;
+  }
+  .menubar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .menubar li {
+    width: 100%;
+  }
+  .overlay {
+    height: fit-content;
+    width: 90%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 2%;
+    left: 5%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .menubar li:not(:first-child) {
+    display: none;
+  }
+  .menubar .icon {
+    float: right;
+    display: block;
+  }
+  .allbuttons.responsive {
+    position: relative;
+  }
+  .allbuttons.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .allbuttons.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #bars a {
+    background-color: #0dd3aa;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: none;
+    border-width: 0px;
+  }
+  td {
+    padding: 4%;
+  }
+}
+.topnavbar {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0px 5px 20px 0px rgb(220 220 220 / 35%);
+}
+.classname {
+  flex: 40%;
+  padding-left: 8%;
+}
+.menubar {
+  flex: 60%;
+}
+.menubar ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+.menubar li {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.menubar a,
+.menubar span {
+  text-decoration: none;
+  background-color: #0dd3aa;
+  border-radius: 100px;
+  outline: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 22px;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 35%);
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+a:hover,
+.menubar span:hover,
+.loginbtn a:hover,
+.leftheaderbtns a:hover,
+.leftheaderbtns span:hover {
+  background-color: #099075;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 75%);
+}
+.menubar li:active {
+  transform: scale(1.1, 1.1);
+}
+.loginbtn a {
+  background-color: #0dd3aa;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #ffffff;
+  padding: 10px 22px;
+  box-shadow: 0px 12px 25px 0px rgb(0 199 157 / 35%);
+  transition: 0.2s linear;
+}
+.icon {
+  display: none;
+}
+.nav-overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  animation: fade 100ms linear;
+}
+
+@keyframes fade {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.nav-overlay-content {
+  position: relative;
+  top: 18%;
+  right: 10%;
+  width: 100%;
+  padding: 0%;
+  text-align: left;
+  margin: auto;
+}
+.nav-overlay-content a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  background-color: #0dd3aa;
+  outline: none;
+  font-size: 27px;
+  font-weight: bold;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 20px 32px;
+  padding-left: 15%;
+  cursor: pointer;
+}
+
+.nav-overlay .closeMenubtn {
+  position: absolute;
+  top: 2%;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #000;
+}
+.overlay {
+  height: fit-content;
+  width: 80%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 20%;
+  left: 10%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 28%;
+  width: 50%;
+  padding: 12% 0%;
+  text-align: left;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 2%;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+.menubar:after {
+  content: "";
+  clear: both;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  outline: #000;
+}
+td {
+  text-align: left;
+  padding: 15px;
+}
+tr {
+  background-color: #fff;
+}
+tr:first-child {
+  font-weight: bold;
+  font-family: Acme;
+  background-color: #000;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.results {
+  width: 100%;
+  padding: 5% 5% 10% 5%;
+  background: linear-gradient(-60deg, #00d3aa 70%, #099075 70%);
+}
