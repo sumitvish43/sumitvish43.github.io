@@ -233,7 +233,9 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 .results {
-  width: 100%;
   padding: 5% 5% 10% 5%;
   background: linear-gradient(-60deg, #00d3aa 70%, #099075 70%);
+  display: flex;
+  justify-content: space-around;
+  width: auto;
 }
